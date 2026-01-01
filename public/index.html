@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light">
+
+  <div class="app">
+    <h1>🌦 Weather App</h1>
+
+    <input id="city" placeholder="Enter city name" />
+    <button onclick="getWeather()">Search</button>
+    <button onclick="getLocationWeather()">📍 Auto Location</button>
+    <button onclick="toggleTheme()">🌙 / ☀️</button>
+
+    <div id="icon" class="icon"></div>
+    <div id="output"></div>
+
+    <canvas id="weatherChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
